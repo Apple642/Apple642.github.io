@@ -85,7 +85,9 @@ h2{
 .portfolio{
   display: grid;
   grid-template-columns: repeat(3, 220px);
+  grid-template-rows: auto auto auto;
   gap: 10px 200px;
+  justify-content: start;
 }
 
 .portfolio img,
@@ -99,10 +101,19 @@ section{
   flex-direction: column;
 }
 
+.left-section {
+  display: flex;              
+  flex-direction: row;        
+  flex-wrap: wrap;           
+  gap: 10px;                  
+  align-items: center;        
+  justify-content: flex-start;
+  margin-top: 40px;
+}
 
 section img,
 section video{
-  width:200px;
+  width:50px;
   height:auto;
 } 
 
@@ -156,6 +167,7 @@ section video{
 
 h4{
   color: white;
+  margin-bottom: 30px;
 }
 
 .mario-block {
@@ -207,6 +219,8 @@ h4{
 }
 #wahoo:active ~ .mario-block .mario {
   animation: marioJump 0.6s ease infinite;
+  margin-top: 30px;
+  margin-bottom:20px;
 }
 
 .button-theme {
@@ -219,9 +233,4 @@ h4{
   cursor: pointer;
 }
 
-/*
-#.lead img {
-  width: 100px;
-  border-bottom-right-radius: blue;
-}
 
