@@ -1,3 +1,4 @@
+
 body {
   background-color: black;
 }
@@ -45,13 +46,14 @@ h1 {
   text-align: center;
   font-size: 50px;
   font-family: cursive;
+  margin-top: 5px;
 }
 
 .profile-pic{
-  width: 200px;
+  width: 300px;
   float: right;
-  margin-left: 20px;
-
+  margin-left: 30px;
+  margin-top: -80px;
 }
 
 .first-paragraph {
@@ -59,6 +61,8 @@ h1 {
   text-align: center;
   font-family: serif;
   font-size: 20px;
+  magrin-bottom: 30px;
+  margin-right: 20px;
 }
 
 
@@ -66,6 +70,7 @@ h2{
   color: lightgreen;
   text-align:left;
   font-size: 30px;
+  margin-top: 90px;
 }
 
 .second-paragraph{
@@ -73,13 +78,33 @@ h2{
   text-align: left;
   font-family: sans-serif;
   font-size: 20px;
+  margin-top: 60px;
 
+}
+
+.portfolio{
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 10px 200px;
+}
+
+.portfolio img,
+.portfolio video{
+  width:200px;
+  height:auto;
 }
 
 section{
-  clear: both;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
+
+
+section img,
+section video{
+  width:200px;
+  height:auto;
+} 
 
 
 .tortprison{
@@ -88,9 +113,7 @@ section{
 
 .tortprisonpic{
   width: 200px;
-  float: left;
-  margin-left: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .waterproblem{
@@ -100,10 +123,6 @@ section{
 .watervideo{
   width:150px;
   height: auto;
-  display:block;
-  margin:20px auto;
-  border:3px solid black;
-  float: center;
 }
 
 .waterproblem2{
@@ -118,10 +137,6 @@ section{
 .stuckvideo{
   width:150px;
   height: auto;
-  display:block;
-  margin:20px auto;
-  border:3px solid black;
-  float: center;
 }
  .stuckproblem2{
   color: white;
@@ -209,3 +224,4 @@ h4{
   width: 100px;
   border-bottom-right-radius: blue;
 }
+
